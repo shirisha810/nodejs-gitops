@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-deployment
+  labels:
+    app: nodejs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - name: nodejs
+        image: 758671678745.dkr.ecr.ap-south-1.amazonaws.com/demo-project:main-459c596216fbaabfc7946456b1a97da606f0957e
+        ports:
+        - containerPort: 8080
