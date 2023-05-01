@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: nodejs-ingress
 spec: 
-  - host: "backend.anveshreddyseelam.xyz"
+  - host: backend.anveshreddyseelam.xyz
     http:
       paths:
       - pathType: Prefix
