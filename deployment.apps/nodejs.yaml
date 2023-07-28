@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: 758671678745.dkr.ecr.ap-south-1.amazonaws.com/demo-project:main-cc5740c3d232b8737a420154d35367dc651f19d1
+          image: 180169423799.dkr.ecr.us-east-1.amazonaws.com/demo-project:main-0d5257fd486bd5b4a2abb8e9f08947f60e55f656
           ports:
             - containerPort: 8080
