@@ -4,7 +4,7 @@ metadata:
   name: nodejs-ingress
 spec: 
   rules:
-  - host: backend.anveshreddyseelam.xyz
+  - host: backend.saiexample.art
     http:
       paths:
       - pathType: Prefix
