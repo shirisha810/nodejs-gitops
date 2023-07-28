@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: nodejs
+spec:
+  commonName: backend.saiexample.art
+  dnsNames:
+  - backend.saiexample.art
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  secretName: nodejs
